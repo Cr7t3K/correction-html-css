@@ -7,6 +7,7 @@
     </head>
     <body>
         <h1>Bienvenue sur ma première page</h1>
+        <a href="#mes-objectifs">Aller à mes objectifs</a>
         <p class="presentation">
             Nom : Doe <br>
             Prénom : John <br>
@@ -15,13 +16,32 @@
             Formation : Développement Web
         </p>
 
+        <div class="block">Gros bloc de séparation pour créer virtualement du contenu pour le scroll</div>
+
         <h5>J'aimerais apprendre :</h5>
-        <ul>
+        <ul id="mes-objectifs">
             <li>Php</li>
             <li>Javascript</li>
             <li>Symfony</li>
         </ul>
 
+        <form action="/envoyer" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom">
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email">
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="10" placeholder="Votre message"></textarea>
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+
         <a href="https://developer.mozilla.org">Lien vers le site de MDN</a>
+        <br>
+        <a href="https://developer.mozilla.org" target="_blank" title="Le site de MDN">Lien vers le site de MDN dans un nouvel onglet</a>
+
     </body>
 </html>

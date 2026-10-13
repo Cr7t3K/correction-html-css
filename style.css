@@ -1,3 +1,8 @@
+.block {
+    height: 1000px;
+    background-color: darkgray;
+}
+
 body {
     background-color: gray;
     font-family: "Roboto Light", Arial, sans-serif;
@@ -26,4 +31,28 @@ ul {
 a {
     color: darkred;
     text-decoration: none;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+input, textarea {
+    width: 400px;
+    padding: 2px;
+    border: solid 5px red;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+}
+
+button {
+    display: block;
+    background-color: green;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 30px;
 }
